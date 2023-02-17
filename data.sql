@@ -1,42 +1,42 @@
-insert into MOVIE(
+insert into MOVIE (
 	FILM_ID,
 	FILM_NAME,
 	SHOW_TIME,
-	theatre_number 
+	THEATRE_NUMBER 
 )	values (
 	1237496,
 	'The Iron Giant',
-	1245,
+	'1245',
 	7
 );
 
-insert into TICKET(
+insert into TICKET (
 	TICKET_NUMBER,
 	SHOW_TIME,
 	THEATRE_NUMBER,
 	FILM_NAME
 ) values (
 	'57A',
-	1245,
+	'1245',
 	7,
 	'The Iron Giant'
 );
 
-insert into CONCESSIONS(
+insert into CONCESSIONS (
 	ITEM_ID,
 	AMOUNT,
-	UPC SERIAL
+	UPC
 ) values (
 	'CHZBGR95',
 	67.00,
 	654894513
 );
 
-insert into CUSTOMER(
+insert into CUSTOMER (
 	CUSTOMER_ID,
 	FIRST_NAME,
 	LAST_NAME,
-	BILLING_ADDRES
+	BILLING_ADDRESS
 )	values (
 	679,
 	'Tony',
@@ -49,11 +49,11 @@ insert into PAYMENT (
 	CUSTOMER_ID,
 	TOTAL,
 	CARD_NUMBER
-) values (
+)	values (
 	97856978,
 	679,
-	43.67,
-	7894789478965413,
+	3.00,
+	78947894
 );
 
 insert into INST (
@@ -65,11 +65,12 @@ insert into INST (
 	SUB_TOTAL,
 	TOTAL
 ) values (
-	10101010105,
-	021620231645,
-	97856978,
+	32,
+	216,
+	978,
 	'CHZBGR95',
 	'57A',
-	40.00,
-	43.67
+	7.00,
+	3.00
 );
+
